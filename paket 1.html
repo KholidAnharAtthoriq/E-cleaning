@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORMULIR ORDER</title>
+<link rel="stylesheet" href="paket 1.css">
+</head>
+<body>
+<h1>FORMULIR ORDER</h1>
+<form id="orderForm" action="invoice.html" method="get">
+  <h1>Formulir Pemesanan</h1>
+    <label for="name">Nama:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <label for="address">Alamat:</label>
+    <textarea id="address" name="address" rows="4" required></textarea><br>
+
+    <label for="country">Pilih Paket:</label>
+    <select id="country" name="country">
+        <option value="Paket Unggulan Cleaning 1 (Rp.400.000)">Paket Unggulan Cleaning 1 (Rp.400.000)</option>
+        <option value="Paket Unggulan Cleaning 2 (Rp.325.000)"> Paket Unggulan Cleaning 2 (Rp.325.000)</option>
+        <option value="Paket Unggulan Cleaning 3 (Rp.190.000)"> Paket Unggulan Cleaning 3 (Rp.190.000)</option>
+        <option value="Paket Bersih Bebas Tungu (Rp.325.000)"> - Paket Bersih Bebas Tungu (Rp.325.000)-</option>
+        <option value="Paket Cuci Sofa atau Kasur (Rp.550.000)"> - Paket Cuci Sofa atau Kasur (Rp.550.000) -</option>
+        <option value="Paket Bersih Dingin (Rp.200.000)"> - Paket Bersih Dingin (Rp.200.000)-</option>
+        <option value="Paket Sterilisasi C (Rp.350.000)"> - Paket Sterilisasi C (Rp.350.000)-</option>
+        <option value="Paket Sterilisasi B (Rp.275.000)"> - Paket Sterilisasi B (Rp.275.000)-</option>
+        <option value="Paket Sterilisasi A (Rp.225.000)"> - Paket Sterilisasi A (Rp.225.000)-</option>
+
+    </select>
+    <br><br>
+
+    <p>(PEMABAYARAN COD)</p>
+     
+<p></p>
+    <!-- Tombol submit order -->
+
+    <button type="submit">Pesan Sekarang</button>   
+        
+
+</form>
+
+<script>
+// Fungsi untuk menampilkan pesan saat tombol ditekan
+function tampilkanPesan() {
+    alert("Pesanan berhasil dikirim");
+}
+</script>
+
+</body>
+</html>

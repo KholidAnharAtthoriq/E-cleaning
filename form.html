@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Pembelian Barang</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    input[type="text"], input[type="email"], input[type="number"], select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Form Pembelian Barang</h2>
+    <form action="/submit_pembelian" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="barang">Barang:</label>
+        <select id="barang" name="barang">
+            <option value="barang1">General Cleaning (Paket Hemat) Rp.Rp 65k/jam</option>
+            <option value="barang2">Deep Cleaning Rumah & Toilet (Paket Hemat) Rp.25k/m2</option>
+            <option value="barang3">Paket Cleaning 1 (Paket Unggulan) Rp.444.000</option>
+            <option value="barang3">Paket Cleaning 2 (Paket Unggulan) Rp.399.000</option>
+            <option value="barang3">Paket Cleaning 3 (Paket Unggulan) Rp 225.000</option>
+            <option value="barang3">Paket Cleaning 4 (Paket Unggulan) Rp.275.000</option>
+            <option value="barang3">Paket Bersih Dingin (Paket Biasa) Rp.275.000</option>
+            <option value="barang3">Paket Cuci Sofa & Kasur (Paket Biasa) Rp 200.000</option>
+            <option value="barang3">Paket Bersih Bebas Tunggu (Paket Biasa) Rp.575.000</option>
+            <option value="barang3">Paket Bersih Dingin (Paket Unggulan) Rp.350.000</option>
+            <option value="barang3">Paket Sterilisasi A (Paket Terlaris) Rp.225.000</option>
+            <option value="barang3">Paket Sterilisasi B (Paket Terlaris) Rp.275.000</option>
+            <option value="barang3">Paket Sterilisasi C (Paket Terlaris) Rp.350.000</option>
+
+            <!-- Tambahkan opsi barang sesuai kebutuhan -->
+        </select>
+        
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" required>
+        
+        <input type="submit" value="Submit">
+
+        
+    </form>
+</div>
+
+</body>
+</html>

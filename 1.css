@@ -1,0 +1,14 @@
+#whatsappButton {
+    background-color: #25D366; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #whatsappButton:hover {
+    background-color: #128C7E; /* Warna latar belakang saat digulir */
+  }
+  
